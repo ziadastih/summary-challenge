@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
+/* ====roots=========== */
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+  /* ========neutral colors===== */
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+
+  /* =========font ================ */
+  --redHatDisplay: "Red Hat Display", sans-serif;
+}
+/* ===setting basic background by setting image for desktop and matching it with color */
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Paleblue);
+}
+.container {
+  position: absolute;
+  background-color: var(--Verypaleblue);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ==========setting up the image ======= */
+.image img {
+  width: 300px;
+  border-radius: 13px 13px 0px 0px;
+  padding-bottom: 30px;
+}
+/* =======setting up the header and text====== */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header h1 {
+  font-size: 24px;
+  font-family: var(--redHatDisplay);
+  padding-bottom: 20px;
+}
+.header p {
+  font-family: var(--redHatDisplay);
+  font-size: 13px;
+  line-height: 1.3rem;
+  color: var(--Desaturatedblue);
+  padding: 0 20px;
+}
+/* =========end of text setting ========= */
+
+/* ==========setting the music/pricing section====== */
+.sub-items {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Paleblue);
+
+  margin-top: 20px;
+  border-radius: 12px;
+  padding: 8px 8px;
+}
+
+.icon a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.icon p {
+  font-family: var(--redHatDisplay);
+  font-size: 13px;
+  color: var(--Darkblue);
+}
+/* ===========end of  music icon and box ===== */
+
+/* =========adjusting change with hover====== */
+.change {
+  font-size: 16px;
+  color: var(--Darkblue);
+}
+.change:hover {
+  color: var(--Brightblue);
+  text-decoration: none;
+  transition: 0.3s;
+}
+/* =========end of change and hover====== */
+/* ==========setting up the submit div====== */
+.submit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.btn {
+  margin-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--Brightblue);
+  color: var(--Paleblue);
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.5;
+  /* =========end of btn and hover========= */
+}
+/* ========last one cancel order and it's hover=== */
+.submit p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: var(--redHatDisplay);
+}
+.submit a {
+  text-decoration: none;
+}
+.submit p:hover {
+  color: var(--Darkblue);
+}
+/* ========done with project ======= dont have all exact detail so did it approx ========== */
